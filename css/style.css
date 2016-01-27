@@ -1,0 +1,194 @@
+.* {
+  box-sizing: border-box;
+}
+
+.html{
+  font-size:50px;
+}
+
+/* center class */
+.center {
+  margin: auto;
+  position:absolute;
+  top:0; bottom:0; left:0; right:0;
+}
+
+/* face class */
+.face {
+  background: #FFCC99;
+  border-radius: 300em;
+  width: 15rem;
+  height: 18rem;
+}
+
+/* FLAIR = top hat */
+.face:before {
+  content:"";
+  position:absolute;
+  display: block;
+  height:10rem;
+  width:13rem;
+  background-color:black;
+  bottom:15rem; left:1rem;
+}
+
+.face:after {
+  content:"";
+  position:absolute;
+  display: block;
+  height:2rem;
+  width:20rem;
+  background-color:black;
+  bottom:14rem;
+  margin-left:-2.5rem;
+}
+
+/* eyes class */
+.eyes {
+  height:2rem;
+  width:15rem;
+}
+
+/* left eye (first) */
+.eyes .eye:first-child {
+  margin: auto;
+  position:absolute;
+  top:0; bottom:0; left:0; right:5rem;
+  float: left;
+  background: white;
+  border-radius: 100rem;
+  height:1.6rem;
+  width:1.6rem;
+}
+
+/* right eye (last) */
+.eyes .eye:last-child {
+  margin: auto;
+  position:absolute;
+  top:0; bottom:0; left:5rem; right:0;
+  float: left;
+  background: white;
+  border-radius: 100rem;
+  height:1.6rem;
+  width:1.6rem;
+}
+
+/* pupil (black) with surrounding color (blue/green) as border */
+.eyes .eye:before{
+  content: "\2022";
+  margin: auto;
+  top:.3rem; bottom:0; left:0; right:.4rem;
+  position: absolute;
+  background:rgb(0,150,220);
+  border-radius:100rem;
+  height:.8rem;
+  width:.8rem;
+}
+
+.eyes .eye:after {
+  position: relative;
+  content: " ";
+  display: block;
+  background-color:#FFCC99;
+  width: 2.5rem;
+  height: .5rem;
+  top: -0.6rem; bottom:0; left:-0.5rem; right:0;
+  border-color: black;
+  border-width: 0.1rem;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-top-left-radius: 5rem;
+}
+
+/* nose with two flairs and bullets as nostrils */
+.nose {
+  height:3rem;
+  width:1.5rem;
+  border-radius:100rem;
+  background:#CC9966;
+  top:4rem;
+}
+
+.nose:before {
+  content: "\2022";
+  text-align: center;
+  position:absolute;
+  margin-left:-1.3rem;
+  height:1.3rem;
+  width:1.3rem;
+  top:1.75rem; bottom:0; left:1rem; right:0;
+  background:#CC9966;
+  border-radius:10rem;
+}
+
+.nose:after {
+  content: "\2022";
+  text-align: center;
+  position:absolute;
+  margin-left:.5rem;
+  height:1.3rem;
+  width:1.3rem;
+  top:1.75rem; bottom:0; left:0; right:2rem;
+  background:#CC9966;
+  border-radius:10rem;
+}
+
+.mouth {
+	width: 10rem;
+	height: 1.4rem;
+  background:#FFCC99;
+  overflow: hidden;
+  margin-top:14rem;
+}
+
+.mouth:before {
+	content:"";
+	display: block;
+	width: 7rem;
+	height: 3rem;
+	border-radius:100%;
+	background: black;
+	margin-top:-1.5rem;
+  margin-left:1.8rem;
+}
+
+.mouth:after {
+	content:"";
+	display: block;
+	width: 3rem;
+	height: 1rem;
+	border-radius: 100rem;
+	background:red;
+  margin-left:3.8rem;
+  margin-top:-0.8rem;
+}
+
+.hair {
+  height:6rem;
+  width:15rem;
+  overflow:hidden;
+}
+
+.hair:after {
+  content: "";
+  display: block;
+  height:18rem;
+  width:15rem;
+  border-radius:100rem;
+  background:brown;
+  top:0; bottom:0; left:0; right:1rem;
+}
+
+.hair:before {
+  content:"";
+  position:absolute;
+  display:block;
+  width: 0rem;
+  height: 0rem;
+  margin-top:4rem;
+  margin-left: 8rem;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 2rem solid #FFCC99;
+  border-top:0;
+}
